@@ -1,0 +1,7 @@
+a=open("text.txt5","w")
+a.write("my name is charul\ni love playing games")
+a.writelines(["\n i love cooking","\n7559298"])
+print(a.writable())
+print(a.seekable())
+a.truncate(10)
+#a.truncate()

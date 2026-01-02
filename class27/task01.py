@@ -1,0 +1,10 @@
+#f=open("text1.txt","x")
+#f.close
+f=open("text1.txt","r")
+print(f.read())
+print(f.readline())
+print(f.readlines())
+f.close()
+f=open("text1.txt","a+")
+f.write("we are learning python\ni like to read books")
+print(f.read())

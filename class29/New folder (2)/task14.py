@@ -1,0 +1,6 @@
+a=open("text.txt","r")
+print(a.read())
+a.seek(0)
+print(a.readline())
+a.seek(0)
+print(a.readlines())

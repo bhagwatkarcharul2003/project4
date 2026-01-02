@@ -1,0 +1,10 @@
+a=open("zappcode1.txt","a")
+a.write("hello all\nmy name is charul\nwe are learning python\ni love to eat food\ni am 19th")
+a.writelines(["\n7559298685"])
+a.truncate(20)
+a.close()
+
+a=open("zappcode.txt","r")
+a.seek(0)
+a.tell()
+print(a.read())
