@@ -1,0 +1,46 @@
+SELECT * FROM patients
+--- 1 FIND ALL MALE PATIENTS WHOSE HEIGHT IS GREATER THAN 170 AND ALLERGIES IS AVAILABE.
+select* from patients where gender='M' and height>170 AND allergies not null;
+
+--- 2 SHOW PATIENTS WHOSE FIRSTNAME STARTS WITH 'R' AND WEIGHT IS LESS THAN 70 
+select * from patients where first_name LIKE'R%'and weight<70;
+
+--- 3 GET PATIENTS WHOSE ALLERGIES HAS NO ALLERGIES AND FROM CITY DELHI
+select* from patients where allergies IS null AND city='Delhi';
+
+--- 4 SHOW PATIENTS WHOSE HEIGHT AROUND 150 TO 170
+select* from patients where height between 150 and 170;
+
+--- 5 FIND PATIENTS WHO DO NOT HAVE ALLERGIES AND WEIGHT MORE THAN 50 
+select* from patients where allergies is null and weight>50;
+
+--- 6 FIND PATIENTS WHOSE CITY IS IN TRONOTO,AJAX,HAMILTON AND LASTNAME ENDS WITH A
+select* from patients where city in('Tronoto','Ajax','Hamilton') AND last_ name like '%A';
+
+SELECT * FROM admissions;
+
+select first_name,last_name,city from patients;
+
+select first_name,last_name,city from patients where city='Hamilton';
+
+select first_name,last_name,gender from patients where gender='F';
+select first_name,last_name,gender from patients where gender='M';
+
+select first_name,last_name from patients where city='Hamilton';
+
+select * from patients where city='Hamilton' and gender='M';
+select * from patients where city='Hamilton' OR gender='M';
+
+select*from patients where allergies='Peanuts'and height=194;
+
+select * from patients where first_name like'%SON%';
+select * from patients where first_name like'%SON';
+select * from patients where first_name like'SON%';
+select * from patients where first_name like'%Y';
+select * from patients where first_name like'Y%';
+
+select * from patients where city like'A%';
+
+select * from patients where first_name like'_H%';
+select * from patients where first_name like'_H_M%';
+select * from patients where first_name like'%A_';
